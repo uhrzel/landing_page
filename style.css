@@ -228,9 +228,7 @@ header .container {
   text-transform: capitalize;
   line-height: 1.4;
 }
-h3 {
-  color: var(--lightOne);
-}
+
 .text {
   color: var(--lightOne);
   font-size: 1.1rem;
@@ -253,6 +251,15 @@ h3 {
   opacity: 0.2;
 }
 .brand {
+  color: var(--darkOne);
+}
+.blogs {
+  color: var(--darkOne);
+}
+.contact {
+  color: var(--darkOne);
+}
+.footer {
   color: var(--darkOne);
 }
 
