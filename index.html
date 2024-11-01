@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Landing Page With Light/Dark Mode</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="wrapper light">
+        <header>
+          <button class="toggle-btn">
+            <i class="bx bxs-moon"></i>
+            <i class="bx bxs-sun"></i>
+          </button>
+
+          <div class="container">
+            <div class="logo">
+              <h3>Fashion</h3>
+            </div>
+
+            <div class="links">
+              <ul>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#product" class="product">Product</a></li>
+                <li><a href="#brand">Brand</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn">Sign Up</a></li>
+              </ul>
+            </div>
+
+            <div class="overlay"></div>
+
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+          </div>
+        </header>
+
+        <div class="content-area">
+          <div class="container">
+            <div class="left">
+              <div class="title">
+                <h1>Fashion World</h1>
+                <h1>Start Exploring now</h1>
+              </div>
+              <p class="text">
+                Fashion is the place where you can find the best of designer
+                clothes for women, accessories, footwear, bags and so on.
+              </p>
+              <div>
+                <a href="#" class="btn">PRE Booking</a>
+              </div>
+            </div>
+            <div class="right">
+              <img
+                src="img/clothes.png"
+                alt="Fashion Clothing"
+                class="clothes w-full h-auto"
+              />
+            </div>
+          </div>
+
+          <div class="brand-section brand mt-10" id="brand">
+            <h2 class="text-3xl font-bold mb-4">Our Brand</h2>
+            <p class="mb-6">
+              Explore our collection of high-quality and fashionable items,
+              designed to make you look and feel your best.
+            </p>
+
+            <!-- Product Cards -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <!-- Card 1 -->
+              <div class="bg-white rounded-lg shadow-lg p-4">
+                <img
+                  src="img/p1.jpg"
+                  alt="Product 1"
+                  class="w-full h-100 object-cover rounded"
+                />
+                <h3 class="text-xl font-semibold mt-2">Stylish Dress</h3>
+                <p class="text-gray-600">Perfect for any occasion.</p>
+                <div class="flex items-center mt-2">
+                  <i class="bx bxs-star text-yellow-500"></i>
+                  <span class="ml-1">4.5</span>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="bg-white rounded-lg shadow-lg p-4">
+                <img
+                  src="img/p2.jpg"
+                  alt="Product 2"
+                  class="w-full h-100 object-cover rounded"
+                />
+                <h3 class="text-xl font-semibold mt-2">Casual Sneakers</h3>
+                <p class="text-gray-600">Comfort and style combined.</p>
+                <div class="flex items-center mt-2">
+                  <i class="bx bxs-star text-yellow-500"></i>
+                  <span class="ml-1">4.8</span>
+                </div>
+              </div>
+              <!-- Card 3 -->
+              <div class="bg-white rounded-lg shadow-lg p-4">
+                <img
+                  src="img/p3.jpg"
+                  alt="Product 3"
+                  class="w-full h-100 object-cover rounded"
+                />
+                <h3 class="text-xl font-semibold mt-2">Chic Handbag</h3>
+                <p class="text-gray-600">A must-have accessory.</p>
+                <div class="flex items-center mt-2">
+                  <i class="bx bxs-star text-yellow-500"></i>
+                  <span class="ml-1">5.0</span>
+                </div>
+              </div>
+              <!-- Additional Cards -->
+              <div class="bg-white rounded-lg shadow-lg p-4">
+                <img
+                  src="img/p4.jpg"
+                  alt="Product 4"
+                  class="w-full h-100 object-cover rounded"
+                />
+                <h3 class="text-xl font-semibold mt-2">Elegant Blouse</h3>
+                <p class="text-gray-600">Perfect for formal events.</p>
+                <div class="flex items-center mt-2">
+                  <i class="bx bxs-star text-yellow-500"></i>
+                  <span class="ml-1">4.7</span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg p-4">
+                <img
+                  src="img/p5.jpg"
+                  alt="Product 5"
+                  class="w-full h-100 object-cover rounded"
+                />
+                <h3 class="text-xl font-semibold mt-2">Trendy Sunglasses</h3>
+                <p class="text-gray-600">Stylish and protective.</p>
+                <div class="flex items-center mt-2">
+                  <i class="bx bxs-star text-yellow-500"></i>
+                  <span class="ml-1">4.6</span>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg shadow-lg p-4">
+                <img
+                  src="img/p6.jpg"
+                  alt="Product 6"
+                  class="w-full h-100 object-cover rounded"
+                />
+                <h3 class="text-xl font-semibold mt-2">Fashionable Hat</h3>
+                <p class="text-gray-600">Complete your look.</p>
+                <div class="flex items-center mt-2">
+                  <i class="bx bxs-star text-yellow-500"></i>
+                  <span class="ml-1">4.9</span>
+                </div>
+              </div>
+            </div>
+            <!-- End Product Cards -->
+          </div>
+        </div>
+
+        <img src="img/art.png" alt="" class="shape" />
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
