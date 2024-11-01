@@ -12,9 +12,8 @@ function declare() {
 
 declare();
 
-// No need for main variable or dark state here
 function toggleAnimation() {
-  // Toggle the dark mode directly
+ 
   wrapper.classList.toggle('dark');
   wrapper.classList.toggle('light');
 }
@@ -26,7 +25,7 @@ function events() {
     wrapper.classList.toggle('active');
   });
 
-  // Close sidebar when any link is clicked
+
   links.forEach((link) => {
     link.addEventListener('click', () => {
       wrapper.classList.remove('active');
@@ -34,7 +33,7 @@ function events() {
   });
 }
 
-// Function to handle opening SweetAlert
+
 function openSweetAlert(title, content, image) {
   Swal.fire({
     title: title,
@@ -51,7 +50,6 @@ function openSweetAlert(title, content, image) {
   });
 }
 
-// Add event listeners to all "Read More" links
 function addSweetAlertListeners() {
   document.querySelectorAll('.read-more').forEach((link) => {
     link.addEventListener('click', function (event) {
@@ -69,14 +67,14 @@ emailjs.init('kQRMRWdS6C2RhpquX');
 document
   .getElementById('contact-form')
   .addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault(); 
 
-    // Collect form data
+  
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    // Send email using EmailJS
+  
     emailjs
       .send('service_nbs8wg4', 'template_8esh196', {
         from_name: name,
@@ -85,7 +83,7 @@ document
       })
       .then(
         function (response) {
-          console.log('Success:', response); // Log success response
+          console.log('Success:', response); 
           Swal.fire({
             icon: 'success',
             title: 'Message sent!',
@@ -95,7 +93,7 @@ document
           document.getElementById('contact-form').reset();
         },
         function (error) {
-          console.error('Failed to send message:', error); // Log error details
+          console.error('Failed to send message:', error); 
           Swal.fire({
             icon: 'error',
             title: 'Oops...',
@@ -106,4 +104,4 @@ document
   });
 
 events();
-addSweetAlertListeners(); // Initial call to apply SweetAlert listeners
+addSweetAlertListeners(); 
